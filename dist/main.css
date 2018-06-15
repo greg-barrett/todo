@@ -1,0 +1,203 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* =====Grid==============*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*====Clearfix====*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/*====Board====*/
+#board {
+  border: 1px solid green;
+  min-width: 80%;
+  margin: 40px;
+  min-height: 500px;
+  border: 15px solid black;
+  padding: 15px;
+  font-family:'Indie Flower', cursive;
+}
+
+/*====Board-header====*/
+#header {
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 2.5em;
+  text-decoration: underline;
+
+}
+
+#adder {
+  display: inline-block;
+  font-size: 2.5em;
+  margin-left: 0.5em;
+  border-radius: 5px;
+}
+#adder:hover,
+.add-item:hover {
+  color: red;
+
+}
+/*====Board-lists zone====*/
+
+#list-area {
+  position: relative;
+
+}
+.list-div {
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.list-div h2 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.list-small {
+  float: left;
+  min-height: 200px;
+  min-width: 300px;
+  margin-left: 5.5%;
+  font-size: 1.5em;
+}
+
+.list-small h2 {
+  font-size: 2em;
+}
+
+.list-zoom {
+  position: absolute;
+  background-color: pink;
+  margin: auto;
+  top: 200px; left: 0; bottom: 0; right: 0;
+  height: 400px;
+  width: 500px;
+  padding-left: 10px;
+  font-size: 1.5em
+}
+
+.list-zoom h2 {
+  font-size: 2.5em;
+}
+.item-div {
+
+  margin-bottom: 10px;
+
+
+}
+.item-div p {
+  display: inline-block;
+  margin-left: 13px;
+}
+form {
+  margin-top: 20px;
+}
+form p {
+  display: inline-block;
+  margin-right: 10px;
+}
+form input,
+form select {
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
+button {
+  height: 40px;
+  width: 100px;
+  font-family: inherit;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border-style: none;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: block;
+}
+.done p {
+  text-decoration: line-through;
+}
+.hide {
+  display: none;
+}
+
+.add-item {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+.
